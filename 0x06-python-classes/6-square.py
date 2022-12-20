@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""creates class Square."""
+
+
 class Square:
     """ Square class defined
         Attributes:
@@ -41,7 +44,7 @@ class Square:
         if type(value) != int:
             raise TypeError("size must be an integer")
         elif value < 0:
-            raise ValueError("size must be greater  than or equal to 0")
+            raise ValueError("size must be >= 0")
         else:
             self.__size = value
 
